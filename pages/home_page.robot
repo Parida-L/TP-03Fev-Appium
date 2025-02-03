@@ -57,4 +57,3 @@ Click On The Views Button From The Home Page
 Click On The Animation Button From The Home Page
     [Documentation]    Click on the Animation button.
     Click Element    xpath=//android.widget.TextView[@content-desc="Animation"]
-

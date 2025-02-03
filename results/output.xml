@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-02-03T14:56:18.659676" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-02-03T16:10:17.516547" rpa="false" schemaversion="5">
 <suite id="s1" name="TP-03Fev-Appium" source="C:\Users\Administrateur\Desktop\TP-03Fev-Appium">
 <suite id="s1-s1" name="Tests" source="C:\Users\Administrateur\Desktop\TP-03Fev-Appium\tests">
 <suite id="s1-s1-s1" name="Apidemos" source="C:\Users\Administrateur\Desktop\TP-03Fev-Appium\tests\apidemos.robot">
-<test id="s1-s1-s1-t1" name="Scenario: Test The Seek Bar From The ApiDemos APK" line="24">
-<kw name="Given I Am On The Seek Bar Option Of The Views Page" owner="views_page">
+<test id="s1-s1-s1-t1" name="Scenario: Test The Secure View From The ApiDemos APK" line="31">
+<kw name="Given I Am On The Secure View Option Of The Views Page" owner="views_page">
 <kw name="I Am On The ApiDemos APK Views Page" owner="views_page">
 <kw name="I Launch The APIDemos App" owner="home_page">
 <kw name="Start Appium Session" owner="home_page">
@@ -23,61 +23,61 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2025-02-03T14:56:19.147125" elapsed="8.211515"/>
+<status status="PASS" start="2025-02-03T16:10:18.009462" elapsed="8.455289"/>
 </kw>
 <arg>${APP_PACKAGE_API}</arg>
 <arg>${APP_ACTIVITY_API}</arg>
 <doc>Démarrer une session Appium en utilisant la configuration.</doc>
-<status status="PASS" start="2025-02-03T14:56:19.146748" elapsed="8.212145"/>
+<status status="PASS" start="2025-02-03T16:10:18.009058" elapsed="8.455896"/>
 </kw>
 <doc>Launch the application.</doc>
-<status status="PASS" start="2025-02-03T14:56:19.146411" elapsed="8.212621"/>
+<status status="PASS" start="2025-02-03T16:10:18.008679" elapsed="8.456381"/>
 </kw>
 <kw name="Verify The Views Element From The Home Page" owner="home_page">
 <kw name="Wait Until Page Contains" owner="AppiumLibrary">
 <arg>text=Views</arg>
 <arg>timeout=5</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2025-02-03T14:56:27.359655" elapsed="0.955669"/>
+<status status="PASS" start="2025-02-03T16:10:26.465662" elapsed="0.967327"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-02-03T14:56:28.900431" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
+<msg time="2025-02-03T16:10:28.133723" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
 <arg>//android.widget.TextView[@content-desc="Views"]</arg>
 <arg>timeout=5</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-02-03T14:56:28.315550" elapsed="0.585219"/>
+<status status="PASS" start="2025-02-03T16:10:27.433277" elapsed="0.700692"/>
 </kw>
 <doc>Verify the "Views" element is visible.</doc>
-<status status="PASS" start="2025-02-03T14:56:27.359235" elapsed="1.541666"/>
+<status status="PASS" start="2025-02-03T16:10:26.465250" elapsed="1.668872"/>
 </kw>
 <kw name="Click On The Views Button From The Home Page" owner="home_page">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-02-03T14:56:28.902509" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Views"]'.</msg>
-<msg time="2025-02-03T14:56:30.405558" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
+<msg time="2025-02-03T16:10:28.135926" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Views"]'.</msg>
+<msg time="2025-02-03T16:10:29.646917" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
 <arg>xpath=//android.widget.TextView[@content-desc="Views"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-02-03T14:56:28.901513" elapsed="1.504484"/>
+<status status="PASS" start="2025-02-03T16:10:28.134716" elapsed="1.512510"/>
 </kw>
 <doc>Click on the Views button.</doc>
-<status status="PASS" start="2025-02-03T14:56:28.901063" elapsed="1.505065"/>
+<status status="PASS" start="2025-02-03T16:10:28.134287" elapsed="1.513128"/>
 </kw>
 <doc>Open the ApiDemos APK and navigate to the Views page.</doc>
-<status status="PASS" start="2025-02-03T14:56:19.145985" elapsed="11.260215"/>
+<status status="PASS" start="2025-02-03T16:10:18.008213" elapsed="11.639287"/>
 </kw>
-<kw name="Scroll To The Seek Bar Option From The Views Page" owner="views_page">
+<kw name="Scroll To The Secure View Option From The Views Page" owner="views_page">
 <kw name="Swipe" owner="AppiumLibrary">
 <arg>500</arg>
 <arg>1500</arg>
 <arg>500</arg>
 <arg>500</arg>
 <doc>Swipe from one point to another point, for an optional duration.</doc>
-<status status="PASS" start="2025-02-03T14:56:30.407187" elapsed="1.312983"/>
+<status status="PASS" start="2025-02-03T16:10:29.648770" elapsed="1.315567"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-03T14:56:32.721278" level="INFO">Slept 1 second.</msg>
+<msg time="2025-02-03T16:10:31.965486" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-03T14:56:31.720370" elapsed="1.001658"/>
+<status status="PASS" start="2025-02-03T16:10:30.964557" elapsed="1.001325"/>
 </kw>
 <kw name="Swipe" owner="AppiumLibrary">
 <arg>500</arg>
@@ -85,50 +85,119 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 <arg>500</arg>
 <arg>500</arg>
 <doc>Swipe from one point to another point, for an optional duration.</doc>
-<status status="PASS" start="2025-02-03T14:56:32.722427" elapsed="1.338732"/>
+<status status="PASS" start="2025-02-03T16:10:31.966069" elapsed="1.342583"/>
 </kw>
 <doc>Scroll to the Seek Bar option.</doc>
-<status status="PASS" start="2025-02-03T14:56:30.406370" elapsed="3.655022"/>
+<status status="PASS" start="2025-02-03T16:10:29.647719" elapsed="3.661127"/>
 </kw>
-<kw name="Verify Seek Bar Option From Views" owner="views_page">
+<kw name="Verify Secure View Option From Views" owner="views_page">
 <kw name="Wait Until Page Contains" owner="AppiumLibrary">
-<arg>text=Seek Bar</arg>
+<arg>text=Secure View</arg>
 <arg>timeout=5</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2025-02-03T14:56:34.062014" elapsed="0.884716"/>
+<status status="PASS" start="2025-02-03T16:10:33.309538" elapsed="0.868607"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-02-03T14:56:35.046066" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Seek Bar"]</msg>
-<arg>//android.widget.TextView[@content-desc="Seek Bar"]</arg>
+<msg time="2025-02-03T16:10:34.281846" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Secure View"]</msg>
+<arg>//android.widget.TextView[@content-desc="Secure View"]</arg>
 <arg>timeout=5</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-02-03T14:56:34.947036" elapsed="0.099300"/>
+<status status="PASS" start="2025-02-03T16:10:34.178435" elapsed="0.103715"/>
 </kw>
-<doc>Verify the "Seek Bar" element is visible.</doc>
-<status status="PASS" start="2025-02-03T14:56:34.061576" elapsed="0.984929"/>
+<doc>Verify the "Secure View" element is visible.</doc>
+<status status="PASS" start="2025-02-03T16:10:33.309126" elapsed="0.973176"/>
 </kw>
-<kw name="Click Seek Bar Option From Views" owner="views_page">
+<kw name="Click Secure View Option From Views" owner="views_page">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-02-03T14:56:35.048424" level="INFO">Clicking element '//android.widget.TextView[@content-desc="Seek Bar"]'.</msg>
-<msg time="2025-02-03T14:56:36.486787" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Seek Bar"]</msg>
-<arg>//android.widget.TextView[@content-desc="Seek Bar"]</arg>
+<msg time="2025-02-03T16:10:34.284277" level="INFO">Clicking element '//android.widget.TextView[@content-desc="Secure View"]'.</msg>
+<msg time="2025-02-03T16:10:35.813336" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Secure View"]</msg>
+<arg>//android.widget.TextView[@content-desc="Secure View"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-02-03T14:56:35.047194" elapsed="1.439824"/>
+<status status="PASS" start="2025-02-03T16:10:34.282925" elapsed="1.530739"/>
 </kw>
-<doc>Click on the Seek Bar element.</doc>
-<status status="PASS" start="2025-02-03T14:56:35.046727" elapsed="1.440430"/>
+<doc>Click on the Secure View element.</doc>
+<status status="PASS" start="2025-02-03T16:10:34.282504" elapsed="1.531349"/>
 </kw>
-<doc>Open the Seek Bar option from the Views page.</doc>
-<status status="PASS" start="2025-02-03T14:56:19.143090" elapsed="17.344167"/>
+<doc>Open the Secure View option from the Views page.</doc>
+<status status="PASS" start="2025-02-03T16:10:18.005994" elapsed="17.807988"/>
 </kw>
-<doc>This is a test to verify the Seek Bar from the ApiDemos APK</doc>
-<status status="PASS" start="2025-02-03T14:56:19.142083" elapsed="17.346847"/>
+<kw name="When I Click On Pop Toast Button" owner="views_page">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=Pop toast</arg>
+<arg>timeout=5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2025-02-03T16:10:35.817678" elapsed="0.035125"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-02-03T16:10:35.854257" level="INFO">Clicking element '//android.widget.Button[@content-desc="Pop toast"]'.</msg>
+<msg time="2025-02-03T16:10:35.985886" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Pop toast"]</msg>
+<arg>${POP_TOAST_BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-02-03T16:10:35.853065" elapsed="0.133040"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-03T16:10:37.987126" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-03T16:10:35.986284" elapsed="2.001445"/>
+</kw>
+<doc>Click on the "Pop Toast" button.</doc>
+<status status="PASS" start="2025-02-03T16:10:35.815740" elapsed="2.172188"/>
+</kw>
+<kw name="And I Click The First Button" owner="views_page">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=Unfiltered demo</arg>
+<arg>timeout=5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2025-02-03T16:10:37.993590" elapsed="0.076987"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=Don't click</arg>
+<arg>timeout=5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2025-02-03T16:10:38.070825" elapsed="0.040883"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-02-03T16:10:38.113380" level="INFO">Clicking element '//android.widget.Button[@resource-id="io.appium.android.apis:id/secure_view_unsecure_button"]'.</msg>
+<msg time="2025-02-03T16:10:38.637622" level="INFO">xpath criteria: //android.widget.Button[@resource-id="io.appium.android.apis:id/secure_view_unsecure_button"]</msg>
+<arg>//android.widget.Button[@resource-id="io.appium.android.apis:id/secure_view_unsecure_button"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-02-03T16:10:38.112055" elapsed="0.525802"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-03T16:10:40.638617" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-03T16:10:38.638068" elapsed="2.000800"/>
+</kw>
+<doc>Click on the first button.</doc>
+<status status="PASS" start="2025-02-03T16:10:37.991117" elapsed="2.647967"/>
+</kw>
+<kw name="Then A Toast Message Is Displayed" owner="views_page">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=Transferred $</arg>
+<arg>timeout=5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2025-02-03T16:10:40.644092" elapsed="0.036626"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-02-03T16:10:40.682161" level="INFO">Clicking element '//android.widget.Button[@resource-id="android:id/button3"]'.</msg>
+<msg time="2025-02-03T16:10:40.814682" level="INFO">xpath criteria: //android.widget.Button[@resource-id="android:id/button3"]</msg>
+<arg>//android.widget.Button[@resource-id="android:id/button3"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-02-03T16:10:40.680979" elapsed="0.133953"/>
+</kw>
+<doc>Verify a toast message is displayed.</doc>
+<status status="PASS" start="2025-02-03T16:10:40.641847" elapsed="0.173225"/>
+</kw>
+<doc>This is a test to verify the Secure View from the ApiDemos APK</doc>
+<status status="PASS" start="2025-02-03T16:10:18.004652" elapsed="22.812107"/>
 </test>
-<status status="PASS" start="2025-02-03T14:56:18.686419" elapsed="17.803916"/>
+<status status="PASS" start="2025-02-03T16:10:17.548292" elapsed="23.269619"/>
 </suite>
-<status status="PASS" start="2025-02-03T14:56:18.682737" elapsed="17.809456"/>
+<status status="PASS" start="2025-02-03T16:10:17.545436" elapsed="23.273806"/>
 </suite>
-<status status="PASS" start="2025-02-03T14:56:18.663537" elapsed="17.829847"/>
+<status status="PASS" start="2025-02-03T16:10:17.520622" elapsed="23.299958"/>
 </suite>
 <statistics>
 <total>

@@ -3,6 +3,7 @@ Resource           ../pages/home_page.robot
 Resource           ../pages/views_page.robot
 Resource           ../pages/animation_page.robot
 Resource           ../pages/chronometer_page.robot
+Resource           ../pages/seekbar_page.robot
 
 *** Test Cases ***
 #GHERKIN
@@ -25,9 +26,12 @@ Scenario: Test The Seek Bar From The ApiDemos APK
     [Documentation]    This is a test to verify the Seek Bar from the ApiDemos APK
     Given I Am On The Seek Bar Option Of The Views Page
     When I Move The Seek Bar To 88
-#     Then The Seek Bar Value Has Changed
+    Then The Seek Bar Value Has Changed
 
-# Scenario: Test The Secure View From The ApiDemos APK
-#     [Documentation]    This is a test to verify the Secure View from the ApiDemos APK
-#     Given I Am On The Secure View Option Of The Views Page
-#     When I Click On Pop Toast Button
+Scenario: Test The Secure View From The ApiDemos APK
+    [Documentation]    This is a test to verify the Secure View from the ApiDemos APK
+    Given I Am On The Secure View Option Of The Views Page
+    When I Click On Pop Toast Button
+    And I Click The First Button
+    Then A Toast Message Is Displayed
+    And The Same Message Reappears After 5 Tries
