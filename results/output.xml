@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-02-03T13:38:15.800618" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-02-03T13:55:19.029591" rpa="false" schemaversion="5">
 <suite id="s1" name="TP-03Fev-Appium" source="C:\Users\Administrateur\Desktop\TP-03Fev-Appium">
 <suite id="s1-s1" name="Tests" source="C:\Users\Administrateur\Desktop\TP-03Fev-Appium\tests">
 <suite id="s1-s1-s1" name="Apidemos" source="C:\Users\Administrateur\Desktop\TP-03Fev-Appium\tests\apidemos.robot">
-<test id="s1-s1-s1-t1" name="Scenario: Test The Chronometer From The ApiDemos APK" line="15">
+<test id="s1-s1-s1-t1" name="Scenario: Test The Chronometer From The ApiDemos APK" line="16">
 <kw name="Given I Am On The Chronometer Option Of The Views Page" owner="views_page">
 <kw name="I Am On The ApiDemos APK Views Page" owner="views_page">
 <kw name="I Launch The APIDemos App" owner="home_page">
@@ -23,86 +23,171 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2025-02-03T13:38:16.016640" elapsed="7.590615"/>
+<status status="PASS" start="2025-02-03T13:55:19.233040" elapsed="8.640256"/>
 </kw>
 <arg>${APP_PACKAGE_API}</arg>
 <arg>${APP_ACTIVITY_API}</arg>
 <doc>Démarrer une session Appium en utilisant la configuration.</doc>
-<status status="PASS" start="2025-02-03T13:38:16.015895" elapsed="7.591563"/>
+<status status="PASS" start="2025-02-03T13:55:19.232742" elapsed="8.640749"/>
 </kw>
 <doc>Launch the application.</doc>
-<status status="PASS" start="2025-02-03T13:38:16.015450" elapsed="7.592118"/>
+<status status="PASS" start="2025-02-03T13:55:19.232502" elapsed="8.641096"/>
 </kw>
 <kw name="Verify The Views Element From The Home Page" owner="home_page">
 <kw name="Wait Until Page Contains" owner="AppiumLibrary">
 <arg>text=Views</arg>
 <arg>timeout=5</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2025-02-03T13:38:23.608263" elapsed="0.965717"/>
+<status status="PASS" start="2025-02-03T13:55:27.874198" elapsed="0.963196"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-02-03T13:38:25.183354" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
+<msg time="2025-02-03T13:55:29.452339" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
 <arg>//android.widget.TextView[@content-desc="Views"]</arg>
 <arg>timeout=5</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-02-03T13:38:24.574264" elapsed="0.609825"/>
+<status status="PASS" start="2025-02-03T13:55:28.837631" elapsed="0.614986"/>
 </kw>
 <doc>Verify the "Views" element is visible.</doc>
-<status status="PASS" start="2025-02-03T13:38:23.607862" elapsed="1.576446"/>
+<status status="PASS" start="2025-02-03T13:55:27.873756" elapsed="1.579013"/>
 </kw>
 <kw name="Click On The Views Button From The Home Page" owner="home_page">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-02-03T13:38:25.185959" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Views"]'.</msg>
-<msg time="2025-02-03T13:38:26.705671" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
+<msg time="2025-02-03T13:55:29.454434" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Views"]'.</msg>
+<msg time="2025-02-03T13:55:31.028735" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
 <arg>xpath=//android.widget.TextView[@content-desc="Views"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-02-03T13:38:25.185095" elapsed="1.520911"/>
+<status status="PASS" start="2025-02-03T13:55:29.453466" elapsed="1.575476"/>
 </kw>
 <doc>Click on the Views button.</doc>
-<status status="PASS" start="2025-02-03T13:38:25.184553" elapsed="1.521666"/>
+<status status="PASS" start="2025-02-03T13:55:29.452931" elapsed="1.576154"/>
 </kw>
 <doc>Open the ApiDemos APK and navigate to the Views page.</doc>
-<status status="PASS" start="2025-02-03T13:38:16.015185" elapsed="10.691174"/>
+<status status="PASS" start="2025-02-03T13:55:19.232169" elapsed="11.796990"/>
 </kw>
 <kw name="Verify The Chronometer Option From The Views Page" owner="views_page">
 <kw name="Wait Until Page Contains" owner="AppiumLibrary">
 <arg>text=Chronometer</arg>
 <arg>timeout=5</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2025-02-03T13:38:26.707661" elapsed="0.042254"/>
+<status status="PASS" start="2025-02-03T13:55:31.030256" elapsed="0.035015"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-02-03T13:38:26.810407" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Chronometer"]</msg>
+<msg time="2025-02-03T13:55:31.123147" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Chronometer"]</msg>
 <arg>//android.widget.TextView[@content-desc="Chronometer"]</arg>
 <arg>timeout=5</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-02-03T13:38:26.750170" elapsed="0.060423"/>
+<status status="PASS" start="2025-02-03T13:55:31.065490" elapsed="0.057844"/>
 </kw>
 <doc>Verify the "Chronometer" element is visible.</doc>
-<status status="PASS" start="2025-02-03T13:38:26.706618" elapsed="0.104096"/>
+<status status="PASS" start="2025-02-03T13:55:31.029314" elapsed="0.094153"/>
 </kw>
 <kw name="Click Chronometer Option From The Views Page" owner="views_page">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-02-03T13:38:26.812316" level="INFO">Clicking element '//android.widget.TextView[@content-desc="Chronometer"]'.</msg>
-<msg time="2025-02-03T13:38:28.275001" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Chronometer"]</msg>
+<msg time="2025-02-03T13:55:31.125145" level="INFO">Clicking element '//android.widget.TextView[@content-desc="Chronometer"]'.</msg>
+<msg time="2025-02-03T13:55:32.573334" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Chronometer"]</msg>
 <arg>//android.widget.TextView[@content-desc="Chronometer"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-02-03T13:38:26.811268" elapsed="1.463975"/>
+<status status="PASS" start="2025-02-03T13:55:31.124125" elapsed="1.449923"/>
 </kw>
 <doc>Click on the Chronometer element.</doc>
-<status status="PASS" start="2025-02-03T13:38:26.810862" elapsed="1.464510"/>
+<status status="PASS" start="2025-02-03T13:55:31.123623" elapsed="1.450792"/>
 </kw>
 <doc>Open the Chronometer option from the Views page.</doc>
-<status status="PASS" start="2025-02-03T13:38:16.013437" elapsed="12.261998"/>
+<status status="PASS" start="2025-02-03T13:55:19.230289" elapsed="13.344204"/>
+</kw>
+<kw name="When I Click On The Start Button" owner="chronometer_page">
+<kw name="Verify The Chonometer Page" owner="chronometer_page">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=Views/Chronometer</arg>
+<arg>timeout=5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2025-02-03T13:55:32.577919" elapsed="0.076285"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=Initial format: 00:00</arg>
+<arg>timeout=5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2025-02-03T13:55:32.654429" elapsed="0.046823"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-02-03T13:55:32.749958" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Start"]</msg>
+<arg>${START_BUTTON}</arg>
+<arg>timeout=5</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-02-03T13:55:32.701486" elapsed="0.048877"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-02-03T13:55:32.795060" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Stop"]</msg>
+<arg>${STOP_BUTTON}</arg>
+<arg>timeout=5</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-02-03T13:55:32.750563" elapsed="0.044702"/>
+</kw>
+<doc>Verify the "Chronometer" page is visible.</doc>
+<status status="PASS" start="2025-02-03T13:55:32.577662" elapsed="0.217729"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-02-03T13:55:32.796777" level="INFO">Clicking element '//android.widget.Button[@content-desc="Start"]'.</msg>
+<msg time="2025-02-03T13:55:32.912381" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Start"]</msg>
+<arg>${START_BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-02-03T13:55:32.795577" elapsed="0.117079"/>
+</kw>
+<doc>Click on the Start button.</doc>
+<status status="PASS" start="2025-02-03T13:55:32.575732" elapsed="0.337086"/>
+</kw>
+<kw name="And I Click On The Set Format String Button" owner="chronometer_page">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-02-03T13:55:33.421664" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Set format string"]</msg>
+<arg>${SET_FORMAT_STRING_BTN}</arg>
+<arg>timeout=5</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-02-03T13:55:32.916350" elapsed="0.505623"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-02-03T13:55:33.423427" level="INFO">Clicking element '//android.widget.Button[@content-desc="Set format string"]'.</msg>
+<msg time="2025-02-03T13:55:33.527928" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Set format string"]</msg>
+<arg>${SET_FORMAT_STRING_BTN}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-02-03T13:55:33.422333" elapsed="0.105837"/>
+</kw>
+<doc>Click on the Set Format String button.</doc>
+<status status="PASS" start="2025-02-03T13:55:32.914454" elapsed="0.613856"/>
+</kw>
+<kw name="Then The Chronometer Format Has Changed" owner="chronometer_page">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=Formatted time</arg>
+<arg>timeout=5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2025-02-03T13:55:33.531561" elapsed="0.994548"/>
+</kw>
+<doc>Verify the Chronometer format has changed.</doc>
+<status status="PASS" start="2025-02-03T13:55:33.529754" elapsed="0.996575"/>
+</kw>
+<kw name="And The Chronometer Is Still Running" owner="chronometer_page">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=00:08</arg>
+<arg>timeout=15</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2025-02-03T13:55:34.529006" elapsed="5.917235"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=00:12</arg>
+<arg>timeout=15</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2025-02-03T13:55:40.446474" elapsed="4.000764"/>
+</kw>
+<doc>Verify the Chronometer is still running.</doc>
+<status status="PASS" start="2025-02-03T13:55:34.527713" elapsed="9.919761"/>
 </kw>
 <doc>This is a test to verify the Chronometer from the ApiDemos APK</doc>
-<status status="PASS" start="2025-02-03T13:38:16.012464" elapsed="12.264371"/>
+<status status="PASS" start="2025-02-03T13:55:19.228884" elapsed="25.220158"/>
 </test>
-<status status="PASS" start="2025-02-03T13:38:15.826374" elapsed="12.452417"/>
+<status status="PASS" start="2025-02-03T13:55:19.055594" elapsed="25.395185"/>
 </suite>
-<status status="PASS" start="2025-02-03T13:38:15.824249" elapsed="12.456292"/>
+<status status="PASS" start="2025-02-03T13:55:19.052695" elapsed="25.399793"/>
 </suite>
-<status status="PASS" start="2025-02-03T13:38:15.804602" elapsed="12.477602"/>
+<status status="PASS" start="2025-02-03T13:55:19.033509" elapsed="25.419776"/>
 </suite>
 <statistics>
 <total>

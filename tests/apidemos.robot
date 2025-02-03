@@ -2,6 +2,7 @@
 Resource           ../pages/home_page.robot
 Resource           ../pages/views_page.robot
 Resource           ../pages/animation_page.robot
+Resource           ../pages/chronometer_page.robot
 
 *** Test Cases ***
 #GHERKIN
@@ -15,10 +16,10 @@ Scenario: Test The Hyperspace Animation From The ApiDemos APK
 Scenario: Test The Chronometer From The ApiDemos APK
     [Documentation]    This is a test to verify the Chronometer from the ApiDemos APK
     Given I Am On The Chronometer Option Of The Views Page
-#     When I Click On The Start Button
-#     And I Click On The Set Format String Button
-#     Then The Chronometer Format Has Changed
-#     And The Chronometer Is Still Running
+    When I Click On The Start Button
+    And I Click On The Set Format String Button
+    Then The Chronometer Format Has Changed
+    And The Chronometer Is Still Running
 
 # Scenario: Test The Seek Bar From The ApiDemos APK
 #     [Documentation]    This is a test to verify the Seek Bar from the ApiDemos APK
