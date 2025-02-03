@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-02-03T13:38:15.800618" rpa="false" schemaversion="5">
+<suite id="s1" name="TP-03Fev-Appium" source="C:\Users\Administrateur\Desktop\TP-03Fev-Appium">
+<suite id="s1-s1" name="Tests" source="C:\Users\Administrateur\Desktop\TP-03Fev-Appium\tests">
+<suite id="s1-s1-s1" name="Apidemos" source="C:\Users\Administrateur\Desktop\TP-03Fev-Appium\tests\apidemos.robot">
+<test id="s1-s1-s1-t1" name="Scenario: Test The Chronometer From The ApiDemos APK" line="15">
+<kw name="Given I Am On The Chronometer Option Of The Views Page" owner="views_page">
+<kw name="I Am On The ApiDemos APK Views Page" owner="views_page">
+<kw name="I Launch The APIDemos App" owner="home_page">
+<kw name="Start Appium Session" owner="home_page">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${APPIUM_SERVER}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>appPackage=${app_package}</arg>
+<arg>appActivity=${app_activity}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-02-03T13:38:16.016640" elapsed="7.590615"/>
+</kw>
+<arg>${APP_PACKAGE_API}</arg>
+<arg>${APP_ACTIVITY_API}</arg>
+<doc>Démarrer une session Appium en utilisant la configuration.</doc>
+<status status="PASS" start="2025-02-03T13:38:16.015895" elapsed="7.591563"/>
+</kw>
+<doc>Launch the application.</doc>
+<status status="PASS" start="2025-02-03T13:38:16.015450" elapsed="7.592118"/>
+</kw>
+<kw name="Verify The Views Element From The Home Page" owner="home_page">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=Views</arg>
+<arg>timeout=5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2025-02-03T13:38:23.608263" elapsed="0.965717"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-02-03T13:38:25.183354" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
+<arg>//android.widget.TextView[@content-desc="Views"]</arg>
+<arg>timeout=5</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-02-03T13:38:24.574264" elapsed="0.609825"/>
+</kw>
+<doc>Verify the "Views" element is visible.</doc>
+<status status="PASS" start="2025-02-03T13:38:23.607862" elapsed="1.576446"/>
+</kw>
+<kw name="Click On The Views Button From The Home Page" owner="home_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-02-03T13:38:25.185959" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Views"]'.</msg>
+<msg time="2025-02-03T13:38:26.705671" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
+<arg>xpath=//android.widget.TextView[@content-desc="Views"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-02-03T13:38:25.185095" elapsed="1.520911"/>
+</kw>
+<doc>Click on the Views button.</doc>
+<status status="PASS" start="2025-02-03T13:38:25.184553" elapsed="1.521666"/>
+</kw>
+<doc>Open the ApiDemos APK and navigate to the Views page.</doc>
+<status status="PASS" start="2025-02-03T13:38:16.015185" elapsed="10.691174"/>
+</kw>
+<kw name="Verify The Chronometer Option From The Views Page" owner="views_page">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=Chronometer</arg>
+<arg>timeout=5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2025-02-03T13:38:26.707661" elapsed="0.042254"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-02-03T13:38:26.810407" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Chronometer"]</msg>
+<arg>//android.widget.TextView[@content-desc="Chronometer"]</arg>
+<arg>timeout=5</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-02-03T13:38:26.750170" elapsed="0.060423"/>
+</kw>
+<doc>Verify the "Chronometer" element is visible.</doc>
+<status status="PASS" start="2025-02-03T13:38:26.706618" elapsed="0.104096"/>
+</kw>
+<kw name="Click Chronometer Option From The Views Page" owner="views_page">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-02-03T13:38:26.812316" level="INFO">Clicking element '//android.widget.TextView[@content-desc="Chronometer"]'.</msg>
+<msg time="2025-02-03T13:38:28.275001" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Chronometer"]</msg>
+<arg>//android.widget.TextView[@content-desc="Chronometer"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-02-03T13:38:26.811268" elapsed="1.463975"/>
+</kw>
+<doc>Click on the Chronometer element.</doc>
+<status status="PASS" start="2025-02-03T13:38:26.810862" elapsed="1.464510"/>
+</kw>
+<doc>Open the Chronometer option from the Views page.</doc>
+<status status="PASS" start="2025-02-03T13:38:16.013437" elapsed="12.261998"/>
+</kw>
+<doc>This is a test to verify the Chronometer from the ApiDemos APK</doc>
+<status status="PASS" start="2025-02-03T13:38:16.012464" elapsed="12.264371"/>
+</test>
+<status status="PASS" start="2025-02-03T13:38:15.826374" elapsed="12.452417"/>
+</suite>
+<status status="PASS" start="2025-02-03T13:38:15.824249" elapsed="12.456292"/>
+</suite>
+<status status="PASS" start="2025-02-03T13:38:15.804602" elapsed="12.477602"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TP-03Fev-Appium" id="s1" pass="1" fail="0" skip="0">TP-03Fev-Appium</stat>
+<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">TP-03Fev-Appium.Tests</stat>
+<stat name="Apidemos" id="s1-s1-s1" pass="1" fail="0" skip="0">TP-03Fev-Appium.Tests.Apidemos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
