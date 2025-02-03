@@ -21,10 +21,10 @@ Scenario: Test The Chronometer From The ApiDemos APK
     Then The Chronometer Format Has Changed
     And The Chronometer Is Still Running
 
-# Scenario: Test The Seek Bar From The ApiDemos APK
-#     [Documentation]    This is a test to verify the Seek Bar from the ApiDemos APK
-#     Given I Am On The Seek Bar Option Of The Views Page
-#     When I Move The Seek Bar To 88
+Scenario: Test The Seek Bar From The ApiDemos APK
+    [Documentation]    This is a test to verify the Seek Bar from the ApiDemos APK
+    Given I Am On The Seek Bar Option Of The Views Page
+    When I Move The Seek Bar To 88
 #     Then The Seek Bar Value Has Changed
 
 # Scenario: Test The Secure View From The ApiDemos APK

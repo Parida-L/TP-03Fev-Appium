@@ -3,6 +3,11 @@ Resource           ../resources/libraries.resource
 Resource           ../pages/home_page.robot
 
 *** Variables ***
+${IMG_SWITCHER_OPTION}        //android.widget.TextView[@content-desc="ImageSwitcher"]
+${SECURE_VIEW_OPTION}         //android.widget.TextView[@content-desc="Secure View"]
+${SEEK_BAR_OPTION}            //android.widget.TextView[@content-desc="Seek Bar"]
+${SPLITTING_TOUCHES_OPTION}   //android.widget.TextView[@content-desc="Splitting Touches across Views"]
+${ANIMATION_OPTION}           //android.widget.TextView[@content-desc="Animation"]
 
 *** Keywords ***
 
@@ -22,6 +27,13 @@ I Am On The Chronometer Option Of The Views Page
     I Am On The ApiDemos APK Views Page
     Verify The Chronometer Option From The Views Page
     Click Chronometer Option From The Views Page
+
+I Am On The Seek Bar Option Of The Views Page
+    [Documentation]    Open the Seek Bar option from the Views page.
+    I Am On The ApiDemos APK Views Page
+    Scroll To The Seek Bar Option From The Views Page
+    Verify Seek Bar Option From Views
+    Click Seek Bar Option From Views
 
 #SOUS KEYWORDS
 
@@ -43,8 +55,17 @@ Click Chronometer Option From The Views Page
     [Documentation]    Click on the Chronometer element.
     Click Element    //android.widget.TextView[@content-desc="Chronometer"]
 
-Verify Seek Bar Option From Views 
-    [Documentation]    Verify the "Seek Bar" element is visible.
+Scroll To The Seek Bar Option From The Views Page
+    [Documentation]    Scroll to the Seek Bar option.
+    Swipe    500    1500    500    500
+    Sleep    1
+    Swipe    500    1500    500    500
+    # 500, 1500 → Start position (x, y) near the bottom.
+    # 500, 500 → End position (x, y) towards the top.
+    # This simulates a swipe-up gesture, which scrolls down.
+
+Verify Seek Bar Option From Views
+    [Documentation]    Verify the "Seek Bar" element is visible. 
     Wait Until Page Contains    text=Seek Bar    timeout=5
     Wait Until Element Is Visible    //android.widget.TextView[@content-desc="Seek Bar"]    timeout=5
 

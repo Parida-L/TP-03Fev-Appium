@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-02-03T13:55:19.029591" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-02-03T14:56:18.659676" rpa="false" schemaversion="5">
 <suite id="s1" name="TP-03Fev-Appium" source="C:\Users\Administrateur\Desktop\TP-03Fev-Appium">
 <suite id="s1-s1" name="Tests" source="C:\Users\Administrateur\Desktop\TP-03Fev-Appium\tests">
 <suite id="s1-s1-s1" name="Apidemos" source="C:\Users\Administrateur\Desktop\TP-03Fev-Appium\tests\apidemos.robot">
-<test id="s1-s1-s1-t1" name="Scenario: Test The Chronometer From The ApiDemos APK" line="16">
-<kw name="Given I Am On The Chronometer Option Of The Views Page" owner="views_page">
+<test id="s1-s1-s1-t1" name="Scenario: Test The Seek Bar From The ApiDemos APK" line="24">
+<kw name="Given I Am On The Seek Bar Option Of The Views Page" owner="views_page">
 <kw name="I Am On The ApiDemos APK Views Page" owner="views_page">
 <kw name="I Launch The APIDemos App" owner="home_page">
 <kw name="Start Appium Session" owner="home_page">
@@ -23,171 +23,112 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2025-02-03T13:55:19.233040" elapsed="8.640256"/>
+<status status="PASS" start="2025-02-03T14:56:19.147125" elapsed="8.211515"/>
 </kw>
 <arg>${APP_PACKAGE_API}</arg>
 <arg>${APP_ACTIVITY_API}</arg>
 <doc>Démarrer une session Appium en utilisant la configuration.</doc>
-<status status="PASS" start="2025-02-03T13:55:19.232742" elapsed="8.640749"/>
+<status status="PASS" start="2025-02-03T14:56:19.146748" elapsed="8.212145"/>
 </kw>
 <doc>Launch the application.</doc>
-<status status="PASS" start="2025-02-03T13:55:19.232502" elapsed="8.641096"/>
+<status status="PASS" start="2025-02-03T14:56:19.146411" elapsed="8.212621"/>
 </kw>
 <kw name="Verify The Views Element From The Home Page" owner="home_page">
 <kw name="Wait Until Page Contains" owner="AppiumLibrary">
 <arg>text=Views</arg>
 <arg>timeout=5</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2025-02-03T13:55:27.874198" elapsed="0.963196"/>
+<status status="PASS" start="2025-02-03T14:56:27.359655" elapsed="0.955669"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-02-03T13:55:29.452339" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
+<msg time="2025-02-03T14:56:28.900431" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
 <arg>//android.widget.TextView[@content-desc="Views"]</arg>
 <arg>timeout=5</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-02-03T13:55:28.837631" elapsed="0.614986"/>
+<status status="PASS" start="2025-02-03T14:56:28.315550" elapsed="0.585219"/>
 </kw>
 <doc>Verify the "Views" element is visible.</doc>
-<status status="PASS" start="2025-02-03T13:55:27.873756" elapsed="1.579013"/>
+<status status="PASS" start="2025-02-03T14:56:27.359235" elapsed="1.541666"/>
 </kw>
 <kw name="Click On The Views Button From The Home Page" owner="home_page">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-02-03T13:55:29.454434" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Views"]'.</msg>
-<msg time="2025-02-03T13:55:31.028735" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
+<msg time="2025-02-03T14:56:28.902509" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Views"]'.</msg>
+<msg time="2025-02-03T14:56:30.405558" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
 <arg>xpath=//android.widget.TextView[@content-desc="Views"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-02-03T13:55:29.453466" elapsed="1.575476"/>
+<status status="PASS" start="2025-02-03T14:56:28.901513" elapsed="1.504484"/>
 </kw>
 <doc>Click on the Views button.</doc>
-<status status="PASS" start="2025-02-03T13:55:29.452931" elapsed="1.576154"/>
+<status status="PASS" start="2025-02-03T14:56:28.901063" elapsed="1.505065"/>
 </kw>
 <doc>Open the ApiDemos APK and navigate to the Views page.</doc>
-<status status="PASS" start="2025-02-03T13:55:19.232169" elapsed="11.796990"/>
+<status status="PASS" start="2025-02-03T14:56:19.145985" elapsed="11.260215"/>
 </kw>
-<kw name="Verify The Chronometer Option From The Views Page" owner="views_page">
+<kw name="Scroll To The Seek Bar Option From The Views Page" owner="views_page">
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>500</arg>
+<arg>1500</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2025-02-03T14:56:30.407187" elapsed="1.312983"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-03T14:56:32.721278" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-03T14:56:31.720370" elapsed="1.001658"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>500</arg>
+<arg>1500</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2025-02-03T14:56:32.722427" elapsed="1.338732"/>
+</kw>
+<doc>Scroll to the Seek Bar option.</doc>
+<status status="PASS" start="2025-02-03T14:56:30.406370" elapsed="3.655022"/>
+</kw>
+<kw name="Verify Seek Bar Option From Views" owner="views_page">
 <kw name="Wait Until Page Contains" owner="AppiumLibrary">
-<arg>text=Chronometer</arg>
+<arg>text=Seek Bar</arg>
 <arg>timeout=5</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2025-02-03T13:55:31.030256" elapsed="0.035015"/>
+<status status="PASS" start="2025-02-03T14:56:34.062014" elapsed="0.884716"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-02-03T13:55:31.123147" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Chronometer"]</msg>
-<arg>//android.widget.TextView[@content-desc="Chronometer"]</arg>
+<msg time="2025-02-03T14:56:35.046066" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Seek Bar"]</msg>
+<arg>//android.widget.TextView[@content-desc="Seek Bar"]</arg>
 <arg>timeout=5</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-02-03T13:55:31.065490" elapsed="0.057844"/>
+<status status="PASS" start="2025-02-03T14:56:34.947036" elapsed="0.099300"/>
 </kw>
-<doc>Verify the "Chronometer" element is visible.</doc>
-<status status="PASS" start="2025-02-03T13:55:31.029314" elapsed="0.094153"/>
+<doc>Verify the "Seek Bar" element is visible.</doc>
+<status status="PASS" start="2025-02-03T14:56:34.061576" elapsed="0.984929"/>
 </kw>
-<kw name="Click Chronometer Option From The Views Page" owner="views_page">
+<kw name="Click Seek Bar Option From Views" owner="views_page">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-02-03T13:55:31.125145" level="INFO">Clicking element '//android.widget.TextView[@content-desc="Chronometer"]'.</msg>
-<msg time="2025-02-03T13:55:32.573334" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Chronometer"]</msg>
-<arg>//android.widget.TextView[@content-desc="Chronometer"]</arg>
+<msg time="2025-02-03T14:56:35.048424" level="INFO">Clicking element '//android.widget.TextView[@content-desc="Seek Bar"]'.</msg>
+<msg time="2025-02-03T14:56:36.486787" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Seek Bar"]</msg>
+<arg>//android.widget.TextView[@content-desc="Seek Bar"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-02-03T13:55:31.124125" elapsed="1.449923"/>
+<status status="PASS" start="2025-02-03T14:56:35.047194" elapsed="1.439824"/>
 </kw>
-<doc>Click on the Chronometer element.</doc>
-<status status="PASS" start="2025-02-03T13:55:31.123623" elapsed="1.450792"/>
+<doc>Click on the Seek Bar element.</doc>
+<status status="PASS" start="2025-02-03T14:56:35.046727" elapsed="1.440430"/>
 </kw>
-<doc>Open the Chronometer option from the Views page.</doc>
-<status status="PASS" start="2025-02-03T13:55:19.230289" elapsed="13.344204"/>
+<doc>Open the Seek Bar option from the Views page.</doc>
+<status status="PASS" start="2025-02-03T14:56:19.143090" elapsed="17.344167"/>
 </kw>
-<kw name="When I Click On The Start Button" owner="chronometer_page">
-<kw name="Verify The Chonometer Page" owner="chronometer_page">
-<kw name="Wait Until Page Contains" owner="AppiumLibrary">
-<arg>text=Views/Chronometer</arg>
-<arg>timeout=5</arg>
-<doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2025-02-03T13:55:32.577919" elapsed="0.076285"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="AppiumLibrary">
-<arg>text=Initial format: 00:00</arg>
-<arg>timeout=5</arg>
-<doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2025-02-03T13:55:32.654429" elapsed="0.046823"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2025-02-03T13:55:32.749958" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Start"]</msg>
-<arg>${START_BUTTON}</arg>
-<arg>timeout=5</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2025-02-03T13:55:32.701486" elapsed="0.048877"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2025-02-03T13:55:32.795060" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Stop"]</msg>
-<arg>${STOP_BUTTON}</arg>
-<arg>timeout=5</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2025-02-03T13:55:32.750563" elapsed="0.044702"/>
-</kw>
-<doc>Verify the "Chronometer" page is visible.</doc>
-<status status="PASS" start="2025-02-03T13:55:32.577662" elapsed="0.217729"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-02-03T13:55:32.796777" level="INFO">Clicking element '//android.widget.Button[@content-desc="Start"]'.</msg>
-<msg time="2025-02-03T13:55:32.912381" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Start"]</msg>
-<arg>${START_BUTTON}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-02-03T13:55:32.795577" elapsed="0.117079"/>
-</kw>
-<doc>Click on the Start button.</doc>
-<status status="PASS" start="2025-02-03T13:55:32.575732" elapsed="0.337086"/>
-</kw>
-<kw name="And I Click On The Set Format String Button" owner="chronometer_page">
-<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2025-02-03T13:55:33.421664" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Set format string"]</msg>
-<arg>${SET_FORMAT_STRING_BTN}</arg>
-<arg>timeout=5</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2025-02-03T13:55:32.916350" elapsed="0.505623"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-02-03T13:55:33.423427" level="INFO">Clicking element '//android.widget.Button[@content-desc="Set format string"]'.</msg>
-<msg time="2025-02-03T13:55:33.527928" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Set format string"]</msg>
-<arg>${SET_FORMAT_STRING_BTN}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-02-03T13:55:33.422333" elapsed="0.105837"/>
-</kw>
-<doc>Click on the Set Format String button.</doc>
-<status status="PASS" start="2025-02-03T13:55:32.914454" elapsed="0.613856"/>
-</kw>
-<kw name="Then The Chronometer Format Has Changed" owner="chronometer_page">
-<kw name="Wait Until Page Contains" owner="AppiumLibrary">
-<arg>text=Formatted time</arg>
-<arg>timeout=5</arg>
-<doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2025-02-03T13:55:33.531561" elapsed="0.994548"/>
-</kw>
-<doc>Verify the Chronometer format has changed.</doc>
-<status status="PASS" start="2025-02-03T13:55:33.529754" elapsed="0.996575"/>
-</kw>
-<kw name="And The Chronometer Is Still Running" owner="chronometer_page">
-<kw name="Wait Until Page Contains" owner="AppiumLibrary">
-<arg>text=00:08</arg>
-<arg>timeout=15</arg>
-<doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2025-02-03T13:55:34.529006" elapsed="5.917235"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="AppiumLibrary">
-<arg>text=00:12</arg>
-<arg>timeout=15</arg>
-<doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2025-02-03T13:55:40.446474" elapsed="4.000764"/>
-</kw>
-<doc>Verify the Chronometer is still running.</doc>
-<status status="PASS" start="2025-02-03T13:55:34.527713" elapsed="9.919761"/>
-</kw>
-<doc>This is a test to verify the Chronometer from the ApiDemos APK</doc>
-<status status="PASS" start="2025-02-03T13:55:19.228884" elapsed="25.220158"/>
+<doc>This is a test to verify the Seek Bar from the ApiDemos APK</doc>
+<status status="PASS" start="2025-02-03T14:56:19.142083" elapsed="17.346847"/>
 </test>
-<status status="PASS" start="2025-02-03T13:55:19.055594" elapsed="25.395185"/>
+<status status="PASS" start="2025-02-03T14:56:18.686419" elapsed="17.803916"/>
 </suite>
-<status status="PASS" start="2025-02-03T13:55:19.052695" elapsed="25.399793"/>
+<status status="PASS" start="2025-02-03T14:56:18.682737" elapsed="17.809456"/>
 </suite>
-<status status="PASS" start="2025-02-03T13:55:19.033509" elapsed="25.419776"/>
+<status status="PASS" start="2025-02-03T14:56:18.663537" elapsed="17.829847"/>
 </suite>
 <statistics>
 <total>

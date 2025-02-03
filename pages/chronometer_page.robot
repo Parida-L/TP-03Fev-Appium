@@ -8,7 +8,7 @@ ${STOP_BUTTON}              //android.widget.Button[@content-desc="Stop"]
 ${RESET_BUTTON}             //android.widget.Button[@content-desc="Reset"]
 ${SET_FORMAT_STRING_BTN}    //android.widget.Button[@content-desc="Set format string"]
 ${CLEAR_FORMAT_STRING_BTN}  //android.widget.Button[@content-desc="Clear format string"]
-${CHRONOMETER}           io.appium.android.apis:id/chronometer
+${CHRONOMETER}              io.appium.android.apis:id/chronometer
 
 
 *** Keywords ***

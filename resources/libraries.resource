@@ -1,3 +1,5 @@
 *** Settings ***
-Library    AppiumLibrary
 Library    Collections
+Library    String
+Library    AppiumLibrary
+Library    RequestsLibrary
